@@ -19,7 +19,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({ stats }) => {
             <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <Users className="w-8 h-8 text-blue-600" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">{stats.totalStudents}</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">-</h3>
             <p className="text-gray-600">إجمالي المشاركين</p>
           </div>
 
@@ -27,7 +27,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({ stats }) => {
             <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <Trophy className="w-8 h-8 text-green-600" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">{stats.topGrade}</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">-</h3>
             <p className="text-gray-600">أعلى درجة</p>
           </div>
 
@@ -35,7 +35,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({ stats }) => {
             <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <TrendingUp className="w-8 h-8 text-purple-600" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">{stats.averageGrade}</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">-</h3>
             <p className="text-gray-600">المتوسط العام</p>
           </div>
 

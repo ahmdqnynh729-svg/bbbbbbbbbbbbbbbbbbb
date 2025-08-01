@@ -60,7 +60,7 @@ export const AllResultsSection: React.FC<AllResultsSectionProps> = ({ students }
                         نحن نعمل بجد لإعداد كل شيء لمسابقة المولد النبوي الشريف
                       </p>
                       <p className="text-orange-600 font-semibold">
-                        ترقبوا الإعلان عن موعد بدء المسابقة قريباً إن شاء الله
+                        ترقبوا بدء المسابقة قريباً إن شاء الله
                       </p>
                     </div>
                     

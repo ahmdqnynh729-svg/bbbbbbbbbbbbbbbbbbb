@@ -84,14 +84,14 @@ function App() {
                               نتائج المسابقة ستكون متاحة فور انتهاء التصحيح
                             </p>
                             <p className="text-orange-600 font-semibold">
-                              يرجى المتابعة للحصول على آخر التحديثات
+                              ترقبوا بدء المسابقة قريباً إن شاء الله
                             </p>
                           </div>
                           
                           <div className="text-center">
                             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-100 to-orange-100 px-6 py-3 rounded-full border border-amber-200">
                               <Clock className="w-5 h-5 text-amber-600 animate-tick" />
-                              <span className="text-amber-800 font-semibold">ترقبوا الإعلان عن النتائج قريباً</span>
+                              <span className="text-amber-800 font-semibold">ترقبوا بدء المسابقة قريباً إن شاء الله</span>
                             </div>
                           </div>
                         </div>

@@ -115,7 +115,7 @@ export const SearchSection: React.FC<SearchSectionProps> = ({ students, onResult
               <div className="mt-6 bg-gradient-to-r from-orange-100 to-yellow-100 border-2 border-orange-200 rounded-xl p-4">
                 <div className="flex items-center justify-center gap-2 text-orange-700">
                   <Clock className="w-5 h-5 animate-tick" />
-                  <span className="font-semibold">المسابقة لم تبدأ بعد - البحث غير متاح حالياً</span>
+                  <span className="font-semibold">ترقبوا بدء المسابقة قريباً إن شاء الله</span>
                 </div>
               </div>
             )}
