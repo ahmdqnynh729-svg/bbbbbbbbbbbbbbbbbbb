@@ -8,6 +8,7 @@ import { ResultCard } from './components/ResultCard';
 import { StatsSection } from './components/StatsSection';
 import { AllResultsSection } from './components/AllResultsSection';
 import { Footer } from './components/Footer';
+import { Clock, AlertCircle, BookOpen } from 'lucide-react';
 import { rankedStudents } from './data/students';
 import { calculateStats } from './utils/contestStats';
 import { Student } from './types';
@@ -58,19 +59,44 @@ function App() {
               {searchAttempted && (
                 <section className="py-12 bg-gray-50">
                   <div className="container mx-auto px-4">
-                    {searchResult ? (
-                      <ResultCard student={searchResult} />
-                    ) : (
-                      <div className="max-w-md mx-auto text-center bg-white p-8 rounded-2xl shadow-lg">
-                        <div className="text-6xl mb-4">😔</div>
-                        <h3 className="text-xl font-bold text-gray-800 mb-2">
-                          لم يتم العثور على نتيجة
-                        </h3>
-                        <p className="text-gray-600">
-                          تأكد من كتابة الاسم أو الرقم بشكل صحيح وحاول مرة أخرى
-                        </p>
+                    <div className="max-w-2xl mx-auto">
+                      <div className="bg-gradient-to-br from-orange-50 via-yellow-50 to-amber-50 border-2 border-orange-200 rounded-3xl p-8 shadow-2xl relative overflow-hidden">
+                        {/* Background decorative elements */}
+                        <div className="absolute top-4 right-4 text-orange-200 opacity-30">
+                          <Clock className="w-16 h-16 animate-spin-slow" />
+                        </div>
+                        <div className="absolute bottom-4 left-4 text-yellow-200 opacity-20">
+                          <BookOpen className="w-12 h-12 animate-bounce-slow" />
+                        </div>
+                        
+                        <div className="text-center relative z-10">
+                          <div className="flex justify-center items-center gap-3 mb-6">
+                            <AlertCircle className="w-12 h-12 text-orange-500 animate-pulse" />
+                            <Clock className="w-12 h-12 text-amber-500 animate-tick" />
+                          </div>
+                          
+                          <h3 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4 animate-fadeInScale">
+                            المسابقة لم تبدأ بعد
+                          </h3>
+                          
+                          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 mb-6 border border-orange-100">
+                            <p className="text-lg md:text-xl text-orange-700 leading-relaxed mb-4">
+                              نتائج المسابقة ستكون متاحة فور انتهاء التصحيح
+                            </p>
+                            <p className="text-orange-600 font-semibold">
+                              يرجى المتابعة للحصول على آخر التحديثات
+                            </p>
+                          </div>
+                          
+                          <div className="text-center">
+                            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-100 to-orange-100 px-6 py-3 rounded-full border border-amber-200">
+                              <Clock className="w-5 h-5 text-amber-600 animate-tick" />
+                              <span className="text-amber-800 font-semibold">ترقبوا الإعلان عن النتائج قريباً</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    )}
+                    </div>
                   </div>
                 </section>
               )}
